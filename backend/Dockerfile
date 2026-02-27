@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
 COPY . .
@@ -6,7 +6,7 @@ COPY . .
 RUN dotnet restore JobTracker.API/JobTracker.API/JobTracker.API.csproj
 RUN dotnet publish JobTracker.API/JobTracker.API/JobTracker.API.csproj -c Release -o /app/publish /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build /app/publish .
 
