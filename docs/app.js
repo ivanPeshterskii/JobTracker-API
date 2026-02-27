@@ -1,4 +1,4 @@
-const API_BASE = "https://jobtracker-api-o7dj.onrender.com";
+const API_BASE = "https://jobtracker-api-dr9h.onrender.com/";
 
 const rows = document.getElementById("rows");
 const state = document.getElementById("state");
