@@ -140,11 +140,14 @@ input:hover, select:hover, textarea:hover{
   border-color: rgba(94,160,255,.30);
 }
 
-/* Make date inputs consistent */
+/* Make date inputs consistent + FIX mobile overflow */
 input[type="date"]{
   color-scheme: dark;
+  min-width: 0;          
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 10px;
 }
-
 /* ====== Buttons ====== */
 .btn{
   padding: 10px 14px;
@@ -257,4 +260,11 @@ input[type="date"]{
   .grid{ grid-template-columns: 1fr; }
   .span-2{ grid-column: auto; }
   #search{ min-width: 180px; flex: 1; }
+}
+
+@media (max-width: 720px){
+  input[type="date"]{
+    font-size: 13px;
+    padding: 9px 8px;
+  }
 }
