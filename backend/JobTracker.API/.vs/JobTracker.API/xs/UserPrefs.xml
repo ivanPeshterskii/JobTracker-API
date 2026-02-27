@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{B6D951ED-38B0-4097-A687-94ECCBBE6979}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="JobTracker.API/Program.cs">
     <Files>
-      <File FileName="JobTracker.API/Models/ApplicationItem.cs" />
-      <File FileName="JobTracker.API/Data/InMemoryStore.cs" />
-      <File FileName="JobTracker.API/Controllers/ApplicationsController.cs" />
-      <File FileName="JobTracker.API/Program.cs" Line="30" Column="11" />
+      <File FileName="JobTracker.API/Models/ApplicationItem.cs" Line="5" Column="33" />
+      <File FileName="JobTracker.API/Data/InMemoryStore.cs" Line="11" Column="13" />
+      <File FileName="JobTracker.API/Controllers/ApplicationsController.cs" Line="1" Column="1" />
+      <File FileName="JobTracker.API/Program.cs" Line="11" Column="64" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="JobTracker.API" expanded="True">
-            <Node name="JobTracker.API" expanded="True">
+            <Node name="JobTracker.API">
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
@@ -23,8 +21,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.JobTracker.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.JobTracker.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

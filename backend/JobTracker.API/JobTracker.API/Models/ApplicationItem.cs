@@ -2,22 +2,7 @@
 
 public class ApplicationItem
 {
-    private int _id;
-
-    public int Id
-    {
-        get => this._id;
-
-        set
-        {
-            if(value < 0)
-            {
-                throw new ArgumentException("Id cannot be lower than 0");
-            }
-
-            this._id = value;
-        }
-    }
+    public int Id { get; set; } 
     public string Company { get; set; } = "";
     public string Position { get; set; } = "";
     public string Status { get; set; } = "Applied"; // Applied | Interview | Offer | Rejected
