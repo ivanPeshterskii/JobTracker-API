@@ -1,0 +1,56 @@
+# =========================
+# .NET
+# =========================
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.log
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (ако добавиш по-късно)
+node_modules/
+
+# Build outputs
+dist/
+out/
+publish/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# NuGet
+*.nupkg
+packages/
+
+# ASP.NET secrets
+secrets.json
+
+# Mac
+.AppleDouble
+.LSOverride

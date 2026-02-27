@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Tracker</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>Job Tracker</h1>
+        <p class="muted">Job Application Manager</p>
+      </div>
+      <button id="btn-refresh" class="btn">Refresh</button>
+    </header>
+
+    <section class="panel">
+      <h2>Add application</h2>
+      <form id="create-form" class="grid">
+        <label>
+          Company
+          <input name="company" type="text" required />
+        </label>
+
+        <label>
+          Position
+          <input name="position" type="text" required />
+        </label>
+
+        <label>
+          Status
+          <select name="status">
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Offer">Offer</option>
+            <option value="Rejected">Rejected</option>
+          </select>
+        </label>
+
+        <label>
+          Applied On
+          <input name="appliedOn" type="date" />
+        </label>
+
+        <label class="span-2">
+          Link
+          <input name="link" type="text" />
+        </label>
+
+        <label class="span-2">
+          Notes
+          <textarea name="notes"></textarea>
+        </label>
+
+        <div class="span-2">
+          <button class="btn primary" type="submit">Add</button>
+          <span id="create-error" class="error"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Applications</h2>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Search..." />
+          <select id="status-filter">
+            <option value="">All</option>
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Offer">Offer</option>
+            <option value="Rejected">Rejected</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="state" class="muted"></div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
