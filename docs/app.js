@@ -1,4 +1,4 @@
-const API_BASE = "https://localhost:7166";
+const API_BASE = "https://jobtracker-api-o7dj.onrender.com";
 
 const rows = document.getElementById("rows");
 const state = document.getElementById("state");
